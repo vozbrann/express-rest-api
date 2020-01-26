@@ -1,15 +1,15 @@
 # Node.js Rest APIs with Express & MySQL
 
 ## Create database
-Open MySQL Shell and enter following command to switch to sql:
+Open MySQL Shell and enter:
 ```
 \sql
 ```
-Enter this and provide the password for 'root@localhost':
+Enter this line and provide a password for 'root@localhost':
 ```
 \connect --mx root@localhost
 ```
-Create schema from sql file:
+Create a schema from sqlModel.sql file:
 ```
 \source <Path to sqlModel.sql>
 ```
