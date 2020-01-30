@@ -72,7 +72,7 @@ exports.remove = (id, result) => {
   connection.query('DELETE FROM teacher WHERE id_teacher = ?', id, (err, res) => {
     if (err) {
       console.log('error: ', err);
-      result(null, err);
+      result(err, null);
       return;
     }
 
@@ -90,7 +90,7 @@ exports.removeAll = (result) => {
   connection.query('DELETE FROM teacher', (err, res) => {
     if (err) {
       console.log('error: ', err);
-      result(null, err);
+      result(err, null);
       return;
     }
 
