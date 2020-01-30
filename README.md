@@ -14,6 +14,9 @@ Create a schema from sqlModel.sql file:
 \source <Path to sqlModel.sql>
 ```
 
+###DB EER Diagram
+![EER Diagram](https://raw.githubusercontent.com/vozbrann/express-rest-api/master/src/mysqlModel/eerDiagram.png)
+
 ## Project setup
 ```
 npm install
@@ -24,11 +27,11 @@ npm start
 
 ## API
 ### Lessons route
-* GET http://localhost:3000/lessons/
-* GET http://localhost:3000/lessons/1
-* DELETE http://localhost:3000/lessons/
-* DELETE http://localhost:3000/lessons/1
-* POST http://localhost:3000/lessons/
+* GET all lessons http://localhost:3000/lessons/
+* GET one lesson http://localhost:3000/lessons/1
+* DELETE all lessons http://localhost:3000/lessons/
+* DELETE one lesson http://localhost:3000/lessons/1
+* POST (add) lesson http://localhost:3000/lessons/
 ```
 {
 	"lesson_title":"math1",
@@ -37,7 +40,7 @@ npm start
 	"classroom_id_classroom": "102"
 }
 ```
-* PUT http://localhost:3000/lessons/4
+* PUT (edit) lesson http://localhost:3000/lessons/4
 ```
 {
     "lesson_title": "math1111",
@@ -48,17 +51,17 @@ npm start
 ```
 
 ### Groups route
-* GET http://localhost:3000/groups/
-* GET http://localhost:3000/groups/1
-* DELETE http://localhost:3000/groups/
-* DELETE http://localhost:3000/groups/1
-* POST http://localhost:3000/groups/
+* GET all groups http://localhost:3000/groups/
+* GET one group http://localhost:3000/groups/1
+* DELETE all groups http://localhost:3000/groups/
+* DELETE one group http://localhost:3000/groups/1
+* POST (add) groups http://localhost:3000/groups/
 ```
 {
     "group_name": "6B"
 }
 ```
-* PUT http://localhost:3000/groups/4
+* PUT (edit) group http://localhost:3000/groups/4
 ```
 {
     "group_name": "6A"
@@ -66,11 +69,11 @@ npm start
 ```
 
 ### Students route
-* GET http://localhost:3000/students/
-* GET http://localhost:3000/students/1
-* DELETE http://localhost:3000/students/
-* DELETE http://localhost:3000/students/1
-* POST http://localhost:3000/students/
+* GET all students http://localhost:3000/students/
+* GET one student http://localhost:3000/students/1
+* DELETE all students http://localhost:3000/students/
+* DELETE one student http://localhost:3000/students/1
+* POST (add) student http://localhost:3000/students/
 ```
 {
     "student_first_name": "name",
@@ -78,7 +81,7 @@ npm start
     "group_id_group": 5
 }
 ```
-* PUT http://localhost:3000/students/4
+* PUT (edit) student http://localhost:3000/students/4
 ```
 {
     "student_first_name": "name",
@@ -88,11 +91,11 @@ npm start
 ```
 
 ### Teachers route
-* GET http://localhost:3000/teachers/
-* GET http://localhost:3000/teachers/1
-* DELETE http://localhost:3000/teachers/
-* DELETE http://localhost:3000/teachers/1
-* POST http://localhost:3000/teachers/
+* GET all teachers http://localhost:3000/teachers/
+* GET one teachers http://localhost:3000/teachers/1
+* DELETE all teachers http://localhost:3000/teachers/
+* DELETE one teacher http://localhost:3000/teachers/1
+* POST (add) teacher http://localhost:3000/teachers/
 ```
 {
     "teacher_first_name": "Roman",
@@ -100,7 +103,7 @@ npm start
     "teacher_specialization": "math"
 }
 ```
-* PUT http://localhost:3000/teachers/4
+* PUT (edit) teacher http://localhost:3000/teachers/4
 ```
 {
     "teacher_first_name": "Roman",
@@ -110,17 +113,17 @@ npm start
 ```
 
 ### Classrooms route
-* GET http://localhost:3000/classrooms/
-* GET http://localhost:3000/classrooms/1
-* DELETE http://localhost:3000/classrooms/
-* DELETE http://localhost:3000/classrooms/1
-* POST http://localhost:3000/classrooms/
+* GET all classrooms http://localhost:3000/classrooms/
+* GET one classroom http://localhost:3000/classrooms/1
+* DELETE all classrooms http://localhost:3000/classrooms/
+* DELETE one classroom http://localhost:3000/classrooms/1
+* POST (add) classroom http://localhost:3000/classrooms/
 ```
 {
     "classroom_capacity": 30
 }
 ```
-* PUT http://localhost:3000/classrooms/4
+* PUT (edit) classroom http://localhost:3000/classrooms/4
 ```
 {
     "classroom_capacity": 30
