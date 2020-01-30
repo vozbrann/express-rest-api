@@ -19,4 +19,4 @@ app.use(bodyParser.urlencoded({
 app.use('/', apiRouter);
 
 // set port, listen for requests
-app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
+app.listen(port, () => console.log(`App listening on port ${port}!`));

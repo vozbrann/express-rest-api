@@ -31,6 +31,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `schoolApi`.`group` (
   `id_group` INT NOT NULL AUTO_INCREMENT,
+  `group_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_group`))
 ENGINE = InnoDB;
 
@@ -67,7 +68,7 @@ ENGINE = InnoDB;
 -- Table `schoolApi`.`lesson`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `schoolApi`.`lesson` (
-  `id_lesson` INT NOT NULL,
+  `id_lesson` INT NOT NULL AUTO_INCREMENT,
   `lesson_title` VARCHAR(45) NOT NULL,
   `group_id_group` INT NOT NULL,
   `teacher_id_teacher` INT NOT NULL,
